@@ -23,6 +23,6 @@ module.exports = {
                     'jquery/dist/jquery.min.js',
                     'jquery/dist/jquery.min.map'
               ],
-        dest:       'src/scripts'
+        dest:       'site/scripts'
     }
 };
