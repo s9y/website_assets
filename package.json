@@ -7,7 +7,7 @@
         "name":     "Matthias Mees",
         "url":      "http://yellowled.de"
     },
-    "license":      "BSD",
+    "license":      "BSD-3-Clause",
     "repository": {
         "type":     "git",
         "url":      "git@github.com:s9y/website_assets.git"
