@@ -18,11 +18,10 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', [
         'clean',
-        'copy:deploy',
+        'copy:build',
         'concat',
         'sass',
-        'postcss:dev',
-        'postcss:deploy',
+        'postcss:build',
         'uglify'
     ]);
 };

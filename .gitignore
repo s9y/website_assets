@@ -5,3 +5,8 @@ DEADJOE
 
 node_modules/
 dist/
+
+site/css/master.css
+site/css/master.css.map
+site/scripts/master.js
+site/scripts/master.js.map

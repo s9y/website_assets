@@ -11,10 +11,10 @@ module.exports = function(grunt) {
                 dest: config.init.dest
             }]
         },
-        deploy: {
+        build: {
             files: [{
                 expand: true,
-                cwd: 'src',
+                cwd: '.',
                 src: config.copy.src,
                 dest: config.copy.dest
             }]

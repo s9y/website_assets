@@ -7,14 +7,15 @@ module.exports = {
         src: [
                     'node_modules/responsive-nav/responsive-nav.js',
                     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-                    'src/scripts/main.js'
+                    'site/scripts/main.js'
               ],
-        dest:       'src/scripts/master.js'
+        dest:       'site/scripts/master.js'
     },
     copy: {
         src: [
-                    'scripts/jquery/dist/jquery.min.js',
-                    'scripts/jquery/dist/jquery.min.map'
+                    'site/scripts/jquery/dist/jquery.min.js',
+                    'site/scripts/jquery/dist/jquery.min.map',
+                    'site/scripts/modernizr/modernizr.js'
               ],
         dest:       'dist'
     },

@@ -3,7 +3,7 @@ var config = require('../config');
 
 module.exports = function(grunt) {
     grunt.config('postcss', {
-        dev: {
+        build: {
             options: {
                 diff: false,
                 map: true,
@@ -12,21 +12,7 @@ module.exports = function(grunt) {
                         browsers: config.autoprefixer.browsers,
                         cascade: false,
                         remove: true
-                    })
-                ]
-            },
-            files: [{
-                expand: true,
-                flatten: true,
-                src: 'src/styles/*.css',
-                dest: 'src/styles'
-            }]
-        },
-        deploy: {
-            options: {
-                diff: false,
-                map: true,
-                processors: [
+                    }),
                     require('pixrem')({
                         atrules: true,
                         unitPrecision: 0
@@ -40,8 +26,8 @@ module.exports = function(grunt) {
             files: [{
                 expand: true,
                 flatten: true,
-                src: 'src/styles/*.css',
-                dest: 'dist/styles'
+                src: 'site/css/*.css',
+                dest: 'dist/site/css'
             }]
         },
         lint: {
@@ -57,13 +43,13 @@ module.exports = function(grunt) {
             },
             files: [{
                 expand: true,
-                cwd: 'src/scss',
+                cwd: '.',
                 src: [
-                    'base/*.scss',
-                    'mixins/*.scss',
-                    'modules/*.scss',
-                    'settings/*.scss',
-                    '*.scss'
+                    'sass/base/*.scss',
+                    'sass/mixins/*.scss',
+                    'sass/modules/*.scss',
+                    'sass/settings/*.scss',
+                    'site/css/*.scss'
                 ]
             }]
         }
