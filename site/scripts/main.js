@@ -28,6 +28,15 @@ $(function() {
         type: 'image'
     });
 
+    // Lightboxed content images
+    $('#content a:has(>img)').magnificPopup({
+        gallery: {
+            enabled: true,
+            tCounter: '<span class="mfp-counter">%curr%/%total%</span>' // markup of counter
+        },
+        type: 'image'
+    });
+
     // Parse RSS Feed
     $('*[data-rss*="http"]').each(function() {
         $.getFeed({
