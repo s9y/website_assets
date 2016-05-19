@@ -7,6 +7,7 @@ module.exports = {
         src: [
                     'node_modules/responsive-nav/responsive-nav.js',
                     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+                    'site/scripts/jquery.jfeed.js',
                     'site/scripts/main.js'
               ],
         dest:       'site/scripts/master.js'
