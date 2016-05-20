@@ -21,3 +21,7 @@ The build is created in the (new) directory `dist/` in the repository's director
 * `dist/site/scripts/` → `scripts/` in https://github.com/s9y/s9y.github.io
 
 (Please do **not** copy build files to `theme_blog` yet.)
+
+## Linting
+
+Please note that you can (and should) lint your changes by using `grunt test` in the project directory. This will test project assets which do not belong to 3rd-party assets using [jshint](http://jshint.com) for JS and [stylelint](http://stylelint.io) for SCSS.
