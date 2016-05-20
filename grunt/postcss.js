@@ -3,7 +3,34 @@ var config = require('../config');
 
 module.exports = function(grunt) {
     grunt.config('postcss', {
-        build: {
+        blog: {
+            options: {
+                diff: false,
+                map: true,
+                processors: [
+                    require('autoprefixer')({
+                        browsers: config.autoprefixer.browsers,
+                        cascade: false,
+                        remove: true
+                    }),
+                    require('pixrem')({
+                        atrules: true,
+                        unitPrecision: 0
+                    }),
+                    require('css-mqpacker')({
+                        sort: true
+                    }),
+                    require('cssnano')()
+                ]
+            },
+            files: [{
+                expand: true,
+                flatten: true,
+                src: 'blog/*.css',
+                dest: 'dist/blog'
+            }]
+        },
+        site: {
             options: {
                 diff: false,
                 map: true,
@@ -49,6 +76,7 @@ module.exports = function(grunt) {
                     'sass/mixins/*.scss',
                     'sass/modules/*.scss',
                     'sass/settings/*.scss',
+                    'blog/*.scss',
                     'site/css/*.scss'
                 ]
             }]

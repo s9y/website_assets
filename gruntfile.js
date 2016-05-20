@@ -21,7 +21,8 @@ module.exports = function(grunt) {
         'copy:build',
         'concat',
         'sass',
-        'postcss:build',
+        'postcss:blog',
+        'postcss:site',
         'uglify'
     ]);
 };

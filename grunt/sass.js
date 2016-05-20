@@ -1,7 +1,21 @@
 // Compile SCSS files to CSS
 module.exports = function(grunt) {
     grunt.config('sass', {
-        build: {
+        blog: {
+            options: {
+                outputStyle: 'nested',
+                precision: 5,
+                sourceMap: true
+            },
+            files: [{
+                expand: true,
+                cwd: 'blog',
+                src: ['*.scss'],
+                dest: 'blog',
+                ext: '.css'
+            }]
+        },
+        site: {
             options: {
                 outputStyle: 'nested',
                 precision: 5,

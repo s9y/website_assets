@@ -6,6 +6,8 @@ DEADJOE
 node_modules/
 dist/
 
+blog/style.css
+blog/style.css.map
 site/css/master.css
 site/css/master.css.map
 site/scripts/master.js
