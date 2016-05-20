@@ -6,8 +6,8 @@
     position: relative;
 
     // LOGO: BOTH ELEMENTS
-    &:before,
-    &:after {
+    &::before,
+    &::after {
         content: '';
         display: block;
         height: 28px;
@@ -16,7 +16,7 @@
     }
 
     // LOGO: SERENDIPITY
-    &:before {
+    &::before {
         background: url('/img/logos/serendipity.png') 0 0 no-repeat;
         background-size: contain;
         left: 3rem;
@@ -24,7 +24,7 @@
     }
 
     // LOGO: FLOWER
-    &:after {
+    &::after {
         background: url('/img/logos/flower.png') 0 0 no-repeat;
         background-size: contain;
         right: .5rem;
@@ -53,15 +53,15 @@
         padding: 0;
         position: static;
 
-        &:before,
-        &:after {
+        &::before,
+        &::after {
             background: transparent;
         }
 
         .layout-container {
             position: relative;
 
-            &:before {
+            &::before {
                 background: url('/img/logos/s9y.png') 0 0 no-repeat;
                 background-size: contain;
                 content: '';
@@ -77,7 +77,7 @@
 
     @media screen and (min-width: $lg) {
         .layout-container {
-            &:before {
+            &::before {
                 height: 141px;
                 top: -1.5rem;
                 width: 200px;
@@ -87,7 +87,7 @@
 
     @media screen and (min-width: $xx) {
         .layout-container {
-            &:before {
+            &::before {
                 height: 194px;
                 width: 275px;
             }
@@ -131,16 +131,18 @@
         a {
             padding: .5rem .75rem;
         }
-
-        #current-page a {
-            background-color: $s9y-orange;
-            color: $black;
-        }
     }
 
     @media screen and (min-width: $lg) {
         a {
             padding: .5rem 1.25rem;
         }
+    }
+}
+
+#current-page a {
+    @media screen and (min-width: $sm) {
+        background-color: $s9y-orange;
+        color: $black;
     }
 }

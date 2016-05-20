@@ -68,8 +68,8 @@ $svg-icon-dims:         1rem !default;
 
     // 1. Set fill color for SVG icons
     // 2. Set dimensions of SVG icons
-    [class^="icon-"],
-    [class*="icon-"] {
+    [class^='icon-'],
+    [class*='icon-'] {
         fill: $svg-icon-fill;
         height: $svg-icon-dims;
         width: $svg-icon-dims;

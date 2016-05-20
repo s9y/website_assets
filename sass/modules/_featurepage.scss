@@ -40,9 +40,11 @@
 }
 
 #featurethemes {
+    @include clearfix;
+
     img {
-        width: 48%;
+        float: left;
         margin-right: 1%;
-        display: inline;
+        width: 48%;
     }
 }
