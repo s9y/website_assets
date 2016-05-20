@@ -7,6 +7,7 @@ module.exports = function(grunt) {
         all: ['gruntfile.js',
               'config.js',
               'grunt/*.js',
-              'src/scripts/main.js']
+              'blog/scripts/main.js',
+              'site/scripts/main.js']
     });
 };

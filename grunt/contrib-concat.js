@@ -6,9 +6,13 @@ module.exports = function(grunt) {
         options: {
             sourceMap: true
         },
-        master: {
-            src: config.concat.src,
-            dest: config.concat.dest
+        blog: {
+            src: config.concat.blog.src,
+            dest: config.concat.blog.dest
+        },
+        site: {
+            src: config.concat.site.src,
+            dest: config.concat.site.dest
         }
     });
 };

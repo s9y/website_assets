@@ -8,6 +8,8 @@ dist/
 
 blog/style.css
 blog/style.css.map
+blog/scripts/master.js
+blog/scripts/master.js.map
 site/css/master.css
 site/css/master.css.map
 site/scripts/master.js

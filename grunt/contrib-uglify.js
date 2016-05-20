@@ -1,13 +1,23 @@
 // Minify JS
 module.exports = function(grunt) {
     grunt.config('uglify', {
-        options: {
-            sourceMap: true,
-            sourceMapIn: 'site/scripts/master.js.map'
+        blog: {
+            options: {
+                sourceMap: true,
+                sourceMapIn: 'blog/scripts/master.js.map'
+            },
+            files: {
+                'dist/blog/scripts/master.js': ['blog/scripts/master.js']
+            }
         },
-        deploy: {
-            src: 'site/scripts/master.js',
-            dest: 'dist/site/scripts/master.js'
+        site: {
+            options: {
+                sourceMap: true,
+                sourceMapIn: 'site/scripts/master.js.map'
+            },
+            files: {
+                'dist/site/scripts/master.js': ['site/scripts/master.js']
+            }
         }
     });
 };
