@@ -47,6 +47,25 @@ ul {
     @include grid-row;
 }
 
+.button-link {
+    @include flat-button($s9y-blue-dark, $white, 4px, $s9y-blue-very);
+
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding: .25rem 1rem;
+    transition: all .25s linear;
+
+    &,
+    &:visited {
+        color: $white;
+    }
+
+    &:hover {
+        transition: all .25s linear;
+    }
+}
+
+
 
 // GLOBAL: CONTENT
 // --------------------------------------------------------------------
