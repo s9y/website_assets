@@ -16,15 +16,15 @@
 
         @media screen and (min-width: $md) {
             @include grid-box(6);
-        }
 
-        &:nth-child(odd) {
-            clear: left;
-            padding-left: 0;
-        }
+            &:nth-child(odd) {
+                clear: left;
+                padding-left: 0;
+            }
 
-        &:nth-child(even) {
-            padding-right: 0;
+            &:nth-child(even) {
+                padding-right: 0;
+            }
         }
     }
 
