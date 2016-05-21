@@ -9,9 +9,10 @@
 @import '../sass/base/base';
 
 // Modules
-@import '../sass/modules/global';
-@import '../sass/modules/navbar-blog';
-@import '../sass/modules/header';
-@import '../sass/modules/sidebar-global';
-@import '../sass/modules/sidebar-blog';
-@import '../sass/modules/footer';
+@import '../sass/modules/global/general';
+@import '../sass/modules/global/navbar';
+@import '../sass/modules/blog/navbar';
+@import '../sass/modules/global/header';
+@import '../sass/modules/global/sidebar';
+@import '../sass/modules/blog/sidebar';
+@import '../sass/modules/global/footer';

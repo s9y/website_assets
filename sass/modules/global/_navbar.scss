@@ -17,16 +17,12 @@
 
     // LOGO: SERENDIPITY
     &::before {
-        background: url('/img/logos/serendipity.png') 0 0 no-repeat;
-        background-size: contain;
         left: 3rem;
         width: 151px;
     }
 
     // LOGO: FLOWER
     &::after {
-        background: url('/img/logos/flower.png') 0 0 no-repeat;
-        background-size: contain;
         right: .5rem;
         width: 56px;
     }
@@ -62,8 +58,6 @@
             position: relative;
 
             &::before {
-                background: url('/img/logos/s9y.png') 0 0 no-repeat;
-                background-size: contain;
                 content: '';
                 display: block;
                 height: 106px;

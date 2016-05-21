@@ -12,14 +12,15 @@
 @import '../../node_modules/magnific-popup/src/css/main';
 
 // Modules
-@import '../../sass/modules/global';
-@import '../../sass/modules/navbar';
-@import '../../sass/modules/header';
-@import '../../sass/modules/showcase';
-@import '../../sass/modules/featurelist';
-@import '../../sass/modules/featurepage';
-@import '../../sass/modules/blogs';
-@import '../../sass/modules/news';
-@import '../../sass/modules/sidebar-global';
-@import '../../sass/modules/sidebar-site';
-@import '../../sass/modules/footer';
+@import '../../sass/modules/global/general';
+@import '../../sass/modules/global/navbar';
+@import '../../sass/modules/site/navbar';
+@import '../../sass/modules/global/header';
+@import '../../sass/modules/site/showcase';
+@import '../../sass/modules/site/featurelist';
+@import '../../sass/modules/site/featurepage';
+@import '../../sass/modules/site/blogs';
+@import '../../sass/modules/site/news';
+@import '../../sass/modules/global/sidebar';
+@import '../../sass/modules/site/sidebar';
+@import '../../sass/modules/global/footer';
