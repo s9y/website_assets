@@ -1,0 +1,29 @@
+// PROJECT-SPECIFIC SETTINGS
+// --------------------------------------------------------------------
+// responsive-nav.js
+$use-rnav-classes:  true;
+
+// SVG sprites
+$use-svg-sprites:   false;
+
+// Forms
+$use-form-styles:   true;
+$use-form-advanced: false;
+
+// Messages
+$use-msg-basic:     true;
+$use-msg-extra:     false;
+
+// Enable JS
+$use-enable-js:     false;
+
+// Image positioning
+$use-cms-classes:   false;
+
+
+// DEPENDENCIES – *DON'T* EDIT!
+// --------------------------------------------------------------------
+// Advanced form support requires basic form support
+@if $use-form-advanced {
+    $use-form-styles: true;
+}
