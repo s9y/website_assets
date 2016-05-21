@@ -1,0 +1,42 @@
+// PAGINATION
+// --------------------------------------------------------------------
+.serendipity_pagination {
+    @include clearfix;
+
+    position: relative;
+
+    #content & p {
+        text-align: center;
+    }
+
+    ul {
+        position: absolute;
+        top: 1rem;
+        width: 100%;
+        z-index: 10
+    }
+
+    .prev {
+        float: left;
+        text-align: left;
+        width: 50%;
+
+        a {
+            &::before {
+                content: '← ';
+            }
+        }
+    }
+
+    .next {
+        float: right;
+        text-align: right;
+        width: 50%;
+
+        a {
+            &::after {
+                content: ' →';
+            }
+        }
+    }
+}

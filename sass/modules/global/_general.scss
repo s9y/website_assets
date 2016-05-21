@@ -91,6 +91,7 @@ body > main {
         background-color: $lite-grey;
         border: 1px solid $silver;
         box-sizing: border-box;
+        overflow-x: scroll;
         padding: .5rem;
     }
 
