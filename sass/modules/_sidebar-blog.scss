@@ -1,0 +1,8 @@
+// SIDEBAR (BLOG)
+// --------------------------------------------------------------------
+// SEARCH FORM
+#searchform {
+    label {
+        @include visuallyhidden;
+    }
+}
