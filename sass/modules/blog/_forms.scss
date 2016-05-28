@@ -1,0 +1,26 @@
+// FORMS
+// --------------------------------------------------------------------
+.form_field,
+.form_tarea {
+    margin-bottom: .5rem;
+
+    label {
+        display: block;
+    }
+}
+
+.form_field {
+    input,
+    select {
+        max-width: 25rem;
+        width: 100%;
+    }
+}
+
+.form_toolbar {
+    margin: 1rem 0;
+}
+
+.form_buttons {
+    margin: 1rem 0;
+}
