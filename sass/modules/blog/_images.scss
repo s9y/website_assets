@@ -1,5 +1,14 @@
 .serendipity_image_center,
 .serendipity_image_left,
+.serendipity_image_right,
+.serendipity_imageComment_center,
+.serendipity_imageComment_left,
+.serendipity_imageComment_right {
+    @include responsive-media;
+}
+
+.serendipity_image_center,
+.serendipity_image_left,
 .serendipity_image_right {
     border: 0;
     padding: 0;
