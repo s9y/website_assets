@@ -1,0 +1,27 @@
+// ARCHIVES
+// --------------------------------------------------------------------
+.archives_year {
+    @media screen and (min-width: $md) {
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+
+        &:nth-of-type(odd) {
+            padding-right: .5rem;
+        }
+
+        &:nth-of-type(even) {
+            padding-left: .5rem;
+        }
+    }
+}
+
+.archives_date {
+    display: inline-block;
+    min-width: 8rem;
+}
+
+.archives_byline {
+    display: block;
+    margin: 0 0 1rem;
+}
