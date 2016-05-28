@@ -87,6 +87,10 @@ body > main {
         text-align: justify;
     }
 
+    img {
+        @include responsive-media;
+    }
+
     pre {
         background-color: $lite-grey;
         border: 1px solid $silver;

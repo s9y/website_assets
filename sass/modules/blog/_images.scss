@@ -1,0 +1,48 @@
+.serendipity_image_center,
+.serendipity_image_left,
+.serendipity_image_right {
+    border: 0;
+    padding: 0;
+}
+
+.serendipity_image_center,
+.serendipity_imageComment_center {
+    display: block;
+    margin: .25rem auto;
+}
+
+.serendipity_image_left,
+.serendipity_imageComment_left {
+    float: left;
+    margin: .25rem 1rem .25rem 0;
+}
+
+.serendipity_image_right,
+.serendipity_imageComment_right {
+    float: right;
+    margin: .25rem 0 .25rem 1rem;
+}
+
+// Images with captions and positioning
+.serendipity_imageComment_center,
+.serendipity_imageComment_left,
+.serendipity_imageComment_right {
+    border: 0;
+    background: transparent;
+    padding: 0;
+}
+
+.serendipity_imageComment_img,
+.serendipity_imageComment_img img {
+    margin: 0;
+    padding: 0;
+}
+
+.serendipity_imageComment_txt {
+    border-top: 0;
+    clear: both;
+    font-size: .875rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
