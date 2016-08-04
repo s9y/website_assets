@@ -20,7 +20,7 @@ The build is created in the (new) directory `dist/` in the repository's director
 * `dist/site/css/` → `css/` in https://github.com/s9y/s9y.github.io
 * `dist/site/scripts/` → `scripts/` in https://github.com/s9y/s9y.github.io
 
-(Please do **not** copy build files to `theme_blog` yet.)
+**Note:** current development of `theme_blog` is done in the `relaunch` branch. Do *not* copy the production assets to the `master` branch there, the theme is deployed automatically!
 
 ## Linting
 
