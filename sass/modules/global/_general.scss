@@ -114,3 +114,16 @@ body > main {
         @include grid-push(3);
     }
 }
+
+.content-image {
+    border: 1px solid $s9y-blue-dark;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    opacity: 1;
+    transition: opacity .25s linear;
+
+    &:hover {
+        opacity: .5;
+        transition: opacity .25s linear;
+    }
+}
