@@ -9,7 +9,7 @@
 
 You'll need [node.js](http://nodejs.org) and [Grunt](http://gruntjs.com). Clone the repository, do `npm i` in the project directory and run `grunt` to start the build script.
 
-This will create new builds of the CSS and JS assets for the various s9y sites (currently, just for the web site and blog theme; later, also for the forum theme and spartacus).
+This will create new builds of the CSS and JS assets for various s9y sites (currently for web site, blog theme and spartacus, but *not* for the forum theme).
 
 ## What to do with the build
 
@@ -20,7 +20,7 @@ The build is created in the (new) directory `dist/` in the repository's director
 * `dist/site/css/` → `css/` in https://github.com/s9y/s9y.github.io
 * `dist/site/scripts/` → `scripts/` in https://github.com/s9y/s9y.github.io
 
-**Note:** current development of `theme_blog` is done in the `relaunch` branch. Do *not* copy the production assets to the `master` branch there, the theme is deployed automatically!
+**Note:** current development of `theme_blog` is done in the `relaunch` branch. Do *not* copy the production assets to the `master` branch there, the theme is deployed automatically! Also note that the exact location of the production assets for spartacus is yet to be determined.
 
 ## Linting
 
