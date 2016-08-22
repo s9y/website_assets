@@ -57,6 +57,33 @@ module.exports = function(grunt) {
                 dest: 'dist/site/css'
             }]
         },
+        spartacus: {
+            options: {
+                diff: false,
+                map: true,
+                processors: [
+                    require('autoprefixer')({
+                        browsers: config.autoprefixer.browsers,
+                        cascade: false,
+                        remove: true
+                    }),
+                    require('pixrem')({
+                        atrules: true,
+                        unitPrecision: 0
+                    }),
+                    require('css-mqpacker')({
+                        sort: true
+                    }),
+                    require('cssnano')()
+                ]
+            },
+            files: [{
+                expand: true,
+                flatten: true,
+                src: 'spartacus/css/*.css',
+                dest: 'dist/spartacus/css'
+            }]
+        },
         lint: {
             options: {
                 writeDest: false,
@@ -77,7 +104,8 @@ module.exports = function(grunt) {
                     'sass/modules/*.scss',
                     'sass/settings/*.scss',
                     'blog/*.scss',
-                    'site/css/*.scss'
+                    'site/css/*.scss',
+                    'spartacus/css/*.scss'
                 ]
             }]
         }

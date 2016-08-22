@@ -1,0 +1,21 @@
+// Settings
+@import '../../sass/settings/constants';
+@import '../../sass/settings/settings-spartacus';
+@import '../../sass/settings/variables';
+
+// Framework
+@import '../../sass/mixins/mixins';
+@import '../../node_modules/node-normalize-scss/normalize';
+@import '../../sass/base/base';
+
+// Vendor
+@import '../../node_modules/magnific-popup/src/css/main';
+
+// Modules
+@import '../../sass/modules/global/general';
+@import '../../sass/modules/global/navbar';
+@import '../../sass/modules/site/navbar';
+@import '../../sass/modules/global/header';
+@import '../../sass/modules/global/sidebar';
+@import '../../sass/modules/spartacus/sidebar';
+@import '../../sass/modules/global/footer';

@@ -19,6 +19,13 @@ module.exports = {
                     'site/scripts/main.js'
                   ],
             dest:   'site/scripts/master.js'
+        },
+        spartacus: {
+            src: [
+                    'node_modules/responsive-nav/responsive-nav.js',
+                    'spartacus/scripts/main.js'
+                  ],
+            dest:   'spartacus/scripts/master.js'
         }
     },
     copy: {
@@ -26,15 +33,27 @@ module.exports = {
                     'blog/scripts/modernizr/modernizr.js',
                     'site/scripts/jquery/dist/jquery.min.js',
                     'site/scripts/jquery/dist/jquery.min.map',
-                    'site/scripts/modernizr/modernizr.js'
+                    'site/scripts/modernizr/modernizr.js',
+                    'spartacus/scripts/jquery/dist/jquery.min.js',
+                    'spartacus/scripts/jquery/dist/jquery.min.map',
+                    'spartacus/scripts/modernizr/modernizr.js'
               ],
         dest:       'dist'
     },
     init: {
-        src: [
-                    'jquery/dist/jquery.min.js',
-                    'jquery/dist/jquery.min.map'
-              ],
-        dest:       'site/scripts'
+        site: {
+            src: [
+                        'jquery/dist/jquery.min.js',
+                        'jquery/dist/jquery.min.map'
+                  ],
+            dest:       'site/scripts'
+        },
+        spartacus: {
+            src: [
+                        'jquery/dist/jquery.min.js',
+                        'jquery/dist/jquery.min.map'
+                  ],
+            dest:       'spartacus/scripts'
+        }
     }
 };

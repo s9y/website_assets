@@ -8,6 +8,7 @@ module.exports = function(grunt) {
               'config.js',
               'grunt/*.js',
               'blog/scripts/main.js',
-              'site/scripts/main.js']
+              'site/scripts/main.js',
+              'spartacus/scripts/main.js']
     });
 };

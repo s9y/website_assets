@@ -13,6 +13,10 @@ module.exports = function(grunt) {
         site: {
             src: config.concat.site.src,
             dest: config.concat.site.dest
+        },
+        spartacus: {
+            src: config.concat.spartacus.src,
+            dest: config.concat.spartacus.dest
         }
     });
 };

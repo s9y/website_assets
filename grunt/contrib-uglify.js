@@ -18,6 +18,15 @@ module.exports = function(grunt) {
             files: {
                 'dist/site/scripts/master.js': ['site/scripts/master.js']
             }
+        },
+        spartacus: {
+            options: {
+                sourceMap: true,
+                sourceMapIn: 'spartacus/scripts/master.js.map'
+            },
+            files: {
+                'dist/spartacus/scripts/master.js': ['spartacus/scripts/master.js']
+            }
         }
     });
 };

@@ -23,6 +23,12 @@ module.exports = function(grunt) {
         'sass',
         'postcss:blog',
         'postcss:site',
+        'postcss:spartacus',
         'uglify'
+    ]);
+
+    grunt.registerTask('setup', [
+        'copy:site',
+        'copy:spartacus'
     ]);
 };

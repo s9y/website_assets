@@ -28,6 +28,20 @@ module.exports = function(grunt) {
                 dest: 'site/css',
                 ext: '.css'
             }]
+        },
+        spartacus: {
+            options: {
+                outputStyle: 'nested',
+                precision: 5,
+                sourceMap: true
+            },
+            files: [{
+                expand: true,
+                cwd: 'spartacus/css',
+                src: ['*.scss'],
+                dest: 'spartacus/css',
+                ext: '.css'
+            }]
         }
     });
 };
