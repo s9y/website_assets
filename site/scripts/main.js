@@ -29,7 +29,7 @@ $(function() {
     });
 
     // Lightboxed content images
-    $('#content a:has(>img)').magnificPopup({
+    $('#content a[href$=".jpg"], #content a[href$=".png"]').magnificPopup({
         gallery: {
             enabled: true,
             tCounter: '<span class="mfp-counter">%curr%/%total%</span>' // markup of counter
