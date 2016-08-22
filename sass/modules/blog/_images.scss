@@ -10,7 +10,8 @@
 .serendipity_image_center,
 .serendipity_image_left,
 .serendipity_image_right {
-    border: 0;
+    border: 1px solid $s9y-blue-dark;
+    box-sizing: border-box;
     padding: 0;
 }
 
