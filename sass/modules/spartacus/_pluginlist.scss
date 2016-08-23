@@ -1,0 +1,34 @@
+// SPARTACUS: PLUGIN LIST
+// --------------------------------------------------------------------
+.spartacus-group {
+    > h3 {
+        border-bottom: 1px dashed $s9y-blue-dark;
+        margin-top: 1.5rem;
+    }
+
+    &:first-of-type > h3 {
+        margin-top: 0;
+    }
+}
+
+.plugin {
+    background: $lite-grey;
+    border: 1px solid $silver;
+    box-sizing: border-box;
+    padding: 0 .5rem;
+    margin: 1rem 0;
+}
+
+.plugin_name {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.plugin_actions {
+    @extend %plain-list;
+
+    li {
+        display: inline-block;
+        margin-right: .5rem;
+    }
+}
