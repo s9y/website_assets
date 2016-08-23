@@ -1,0 +1,10 @@
+// CONTENT (SPARTACUS)
+// --------------------------------------------------------------------
+.spartacus-back {
+    display: inline-block;
+    margin: 0 0 1rem;
+
+    &:before {
+        content: '← ';
+    }
+}

@@ -1,0 +1,20 @@
+// SPARTACUS: HEADER
+// --------------------------------------------------------------------
+.spartacus-slogan {
+    @include grid-box(12, .5rem);
+
+    > span {
+        display: block;
+        margin: 0 0 1rem;
+        text-align: justify;
+    }
+
+    @media screen and (min-width: $md) {
+        @include grid-box(9, 1rem);
+        @include grid-prefix(3);
+
+        > span {
+            font-size: 1.125rem;
+        }
+    }
+}

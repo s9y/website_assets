@@ -1,2 +1,11 @@
 // SIDEBAR (SPARTACUS)
 // --------------------------------------------------------------------
+.spartacus-list {
+    @extend %plain-list;
+}
+
+#spartacus-feeds {
+    ul {
+        @extend %plain-list;
+    }
+}
