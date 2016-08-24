@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/s9y/website_assets.svg)](https://david-dm.org/s9y/website_assets)
 [![devDependency Status](https://david-dm.org/s9y/website_assets/dev-status.svg)](https://david-dm.org/s9y/website_assets#info=devDependencies)
 
-**Important:** Note that this is very much work in progress, including the documentation as to how to create a build and distribute the created files. For the time being, if you need a new build, please ping [@yellowled](https://github.com/yellowled).
+**Important:** Note that this is work in progress, including the documentation as to how to create a build and distribute the created files. For the time being, if you need a new build, please ping [@yellowled](https://github.com/yellowled).
 
 ## Quickstart
 
@@ -13,14 +13,16 @@ This will create new builds of the CSS and JS assets for various s9y sites (curr
 
 ## What to do with the build
 
-The build is created in the (new) directory `dist/` in the repository's directory. The files relate to other s9y repositories as follows:
+The build is created in the (new) directory `dist/` in the repository's directory. The files relate to other s9y repositories as follows (see note below):
 
 * `dist/blog/style.css` → `style.css` in https://github.com/s9y/theme_blog
 * `dist/blog/scripts/` → `scripts` in https://github.com/s9y/theme_blog
 * `dist/site/css/` → `css/` in https://github.com/s9y/s9y.github.io
 * `dist/site/scripts/` → `scripts/` in https://github.com/s9y/s9y.github.io
+* `dist/spartacus/css/` → `homepage/css/` in https://github.com/s9y/additional_plugins
+* `dist/spartacus/scripts/` → `homepage/scripts/` in https://github.com/s9y/additional_plugins
 
-**Note:** current development of `theme_blog` is done in the `relaunch` branch. Do *not* copy the production assets to the `master` branch there, the theme is deployed automatically! Also note that the exact location of the production assets for spartacus is yet to be determined.
+**Note:** current development of `theme_blog` is done in the `relaunch` branch, current developement for the spartacus site is done in the `spartacus-relaunch` branch of `additional_plugins`. Do *not* copy the production assets to the `master` branches there, both theme and sparatcus is deployed automatically!
 
 ## Linting
 
