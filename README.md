@@ -22,7 +22,7 @@ The build is created in the (new) directory `dist/` in the repository's director
 * `dist/spartacus/css/` → `homepage/css/` in https://github.com/s9y/additional_plugins
 * `dist/spartacus/scripts/` → `homepage/scripts/` in https://github.com/s9y/additional_plugins
 
-**Note:** current development of `theme_blog` is done in the `relaunch` branch, current developement for the spartacus site is done in the `spartacus-relaunch` branch of `additional_plugins`. Do *not* copy the production assets to the `master` branches there, both theme and sparatcus is deployed automatically!
+**Note:** current development of `theme_blog` is done in the `relaunch` branch, current developement for the spartacus site is done in the `spartacus-relaunch` branch of `additional_plugins`. Do *not* copy the production assets to the `master` branches there, both theme and spartacus are deployed automatically!
 
 ## Linting
 
