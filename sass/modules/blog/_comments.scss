@@ -12,6 +12,19 @@
     margin: 2rem 0;
 }
 
+.serendipity_comment {
+    border: 1px solid $silver;
+    border-radius: 1px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem 1rem;
+
+    &:nth-of-type(even) {
+        background-color: $lite-grey;
+    }
+}
+
 @media screen and (min-width: $md) {
     .commentlevel-1 { margin-left: 1rem; }
     .commentlevel-2 { margin-left: 2rem; }
