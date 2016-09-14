@@ -120,3 +120,19 @@ body > main {
     box-sizing: border-box;
     margin: 1rem 0;
 }
+
+figure {
+    img {
+        border: 1px solid $s9y-blue-dark;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+figcaption {
+    box-sizing: border-box;
+    color: $greyed-out;
+    font-size: .8125rem;
+    padding: .3125rem 0 0;
+    text-align: center;
+}
