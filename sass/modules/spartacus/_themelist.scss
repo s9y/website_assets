@@ -4,8 +4,9 @@
     background: $lite-grey;
     border: 1px solid $silver;
     box-sizing: border-box;
-    padding: 0 .5rem;
     margin: 1rem 0;
+    padding: 0 .5rem;
+    overflow: hidden;
 
     @media screen and (min-width: $md) {
         flex: 0 1 48.5%;
