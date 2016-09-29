@@ -1,5 +1,12 @@
 // SIDEBAR (BLOG)
 // --------------------------------------------------------------------
+// SIDEBAR SEPERATOR
+#content {
+    @media screen and (min-width: $md) {
+        border-left: 1px solid $silver;
+    }
+}
+
 // SEARCH FORM
 #searchform {
     label {
