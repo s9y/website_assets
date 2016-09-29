@@ -13,3 +13,19 @@
         @include visuallyhidden;
     }
 }
+
+// DEVELOPMENT STATE
+.s9y_dev_state {
+    background: $s9y-blue-lite;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: .5rem;
+
+    dt {
+        font-weight: normal;
+    }
+
+    dd {
+        font-weight: bold;
+    }
+}
