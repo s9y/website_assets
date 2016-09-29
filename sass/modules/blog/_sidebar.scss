@@ -29,3 +29,8 @@
         font-weight: bold;
     }
 }
+
+// SYNDICATION (TMP)
+#serendipity_syndication_list li:nth-child(1n+2) {
+    display: none;
+}
