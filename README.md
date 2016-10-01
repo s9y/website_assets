@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/s9y/website_assets.svg)](https://david-dm.org/s9y/website_assets)
 [![devDependency Status](https://david-dm.org/s9y/website_assets/dev-status.svg)](https://david-dm.org/s9y/website_assets#info=devDependencies)
 
-**Important:** Note that this is work in progress, including the documentation as to how to create a build and distribute the created files. For the time being, if you need a new build, please ping [@yellowled](https://github.com/yellowled).
+**Important:** Note that this is work in progress, including the documentation as to how to create a build and distribute the created files. For the time being, if you need help with a new build, please ping [@yellowled](https://github.com/yellowled).
 
 ## Quickstart
 
@@ -22,7 +22,7 @@ The build is created in the (new) directory `dist/` in the repository's director
 * `dist/spartacus/css/` → `homepage/css/` in https://github.com/s9y/additional_plugins
 * `dist/spartacus/scripts/` → `homepage/scripts/` in https://github.com/s9y/additional_plugins
 
-**Note:** current development of `theme_blog` is done in the `relaunch` branch, current developement for the spartacus site is done in the `spartacus-relaunch` branch of `additional_plugins`. Do *not* copy the production assets to the `master` branches there, both theme and spartacus are deployed automatically!
+Please also copy the respective `.map` files.
 
 ## Linting
 
