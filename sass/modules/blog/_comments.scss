@@ -30,6 +30,18 @@
     overflow-x: scroll;
 }
 
+.serendipity_commentDirection {
+    > br {
+        display: none;
+    }
+
+    .captcha,
+    label {
+        display: block;
+        margin: .5rem 0;
+    }
+}
+
 @media screen and (min-width: $md) {
     .commentlevel-1 { margin-left: 1rem; }
     .commentlevel-2 { margin-left: 2rem; }
