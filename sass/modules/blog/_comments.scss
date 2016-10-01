@@ -25,6 +25,10 @@
     }
 }
 
+.serendipity_commentBody {
+    overflow-x: scroll;
+}
+
 @media screen and (min-width: $md) {
     .commentlevel-1 { margin-left: 1rem; }
     .commentlevel-2 { margin-left: 2rem; }
