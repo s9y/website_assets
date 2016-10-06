@@ -3,20 +3,20 @@
 #nav-global {
     // LOGO: SERENDIPITY
     &::before {
-        background: url('../homepage/img/logos/serendipity.png') 0 0 no-repeat;
+        background: url('../img/logos/serendipity.png') 0 0 no-repeat;
         background-size: contain;
     }
 
     // LOGO: FLOWER
     &::after {
-        background: url('../homepage/img/logos/flower.png') 0 0 no-repeat;
+        background: url('../img/logos/flower.png') 0 0 no-repeat;
         background-size: contain;
     }
 
     @media screen and (min-width: $sm) {
         .layout-container {
             &::before {
-                background: url('../homepage/img/logos/s9y.png') 0 0 no-repeat;
+                background: url('../img/logos/s9y.png') 0 0 no-repeat;
                 background-size: contain;
             }
         }
