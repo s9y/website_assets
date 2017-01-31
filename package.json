@@ -28,7 +28,7 @@
         "responsive-nav":           "^1.0.39"
     },
     "devDependencies":  {
-        "autoprefixer":             "^6.6.1",
+        "autoprefixer":             "^6.7.1",
         "css-mqpacker":             "^5.0.1",
         "cssnano":                  "^3.10.0",
         "grunt":                    "^1.0.1",
