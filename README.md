@@ -27,3 +27,17 @@ Please also copy the respective `.map` files.
 ## Linting
 
 Please note that you can (and should) lint your changes by using `grunt test` in the project directory. This will test project assets which do not belong to 3rd-party assets using [jshint](http://jshint.com) for JS and [stylelint](http://stylelint.io) for SCSS.
+
+## Updating jQuery
+
+jQuery is managed through `package.json`, but there is currently no task to copy an updated version of it from `node_modules/jquery/dist` to the directories for the sites that need it. So in case of an update to jQuery, for the time being the files
+
+* `node_modules/jquery/dist/jquery.min.js`
+* `node_modules/jquery/dist/jquery.min.map`
+
+**both** need to be copied to
+
+* `site/scripts/jquery/dist/` and
+* `spartacus/scripts/jquery/dist/`
+
+(It's not *super* dramatic to forget that since both sites use CDN versions of jQuery, the bundled ones are only fallbacks.)
