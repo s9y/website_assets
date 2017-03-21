@@ -22,7 +22,7 @@
         "postinstall":  "grunt setup"
     },
     "dependencies": {
-        "jquery":                   "^3.2.0",
+        "jquery":                   "^3.2.1",
         "magnific-popup":           "^1.1.0",
         "node-normalize-scss":      "^1.4.0",
         "responsive-nav":           "^1.0.39"
