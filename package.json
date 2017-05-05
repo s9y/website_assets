@@ -24,7 +24,7 @@
     "dependencies": {
         "jquery":                   "^3.2.1",
         "magnific-popup":           "^1.1.0",
-        "node-normalize-scss":      "^1.4.0",
+        "node-normalize-scss":      "~1.4.0",
         "responsive-nav":           "^1.0.39"
     },
     "devDependencies":  {
@@ -44,7 +44,7 @@
         "postcss-reporter":         "^3.0.0",
         "postcss-scss":             "^0.4.1",
         "stylelint":                "^7.10.1",
-        "stylelint-order":          "^0.4.3",
+        "stylelint-order":          "^0.4.4",
         "stylelint-scss":           "^1.4.4",
         "time-grunt":               "^1.4.0"
     }
