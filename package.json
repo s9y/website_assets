@@ -22,30 +22,30 @@
         "postinstall": "grunt setup"
     },
     "dependencies": {
-        "jquery": "^3.2.1",
-        "magnific-popup": "^1.1.0",
+        "jquery": "~3.2.1",
+        "magnific-popup": "~1.1.0",
         "node-normalize-scss": "~3.0.0",
-        "responsive-nav": "^1.0.39"
+        "responsive-nav": "~1.0.39"
     },
     "devDependencies": {
-        "autoprefixer": "^7.1.2",
-        "css-mqpacker": "^6.0.1",
-        "cssnano": "^3.10.0",
-        "grunt": "^1.0.1",
-        "grunt-contrib-clean": "^1.1.0",
-        "grunt-contrib-concat": "^1.0.1",
-        "grunt-contrib-copy": "^1.0.0",
-        "grunt-contrib-jshint": "^1.1.0",
-        "grunt-contrib-uglify": "^3.0.1",
-        "grunt-postcss": "^0.8.0",
-        "grunt-sass": "^2.0.0",
-        "jit-grunt": "^0.10.0",
-        "pixrem": "^4.0.1",
-        "postcss-reporter": "^4.0.0",
-        "postcss-scss": "^1.0.0",
-        "stylelint": "^8.0.0",
-        "stylelint-order": "^0.6.0",
-        "stylelint-scss": "^1.5.0",
-        "time-grunt": "^1.4.0"
+        "autoprefixer": "~7.2.3",
+        "css-mqpacker": "~6.0.1",
+        "cssnano": "~3.10.0",
+        "grunt": "~1.0.1",
+        "grunt-contrib-clean": "~1.1.0",
+        "grunt-contrib-concat": "~1.0.1",
+        "grunt-contrib-copy": "~1.0.0",
+        "grunt-contrib-jshint": "~1.1.0",
+        "grunt-contrib-uglify": "~3.3.0",
+        "grunt-postcss": "~0.9.0",
+        "grunt-sass": "~2.0.0",
+        "jit-grunt": "~0.10.0",
+        "pixrem": "~4.0.1",
+        "postcss-reporter": "~5.0.0",
+        "postcss-scss": "~1.0.2",
+        "stylelint": "~8.4.0",
+        "stylelint-order": "~0.8.0",
+        "stylelint-scss": "~2.2.0",
+        "time-grunt": "~1.4.0"
     }
 }
