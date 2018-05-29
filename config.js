@@ -29,11 +29,14 @@ module.exports = {
         }
     },
     copy: {
-        src: [
+            src: [
+                    'blog/fonts/*',
                     'blog/scripts/modernizr/modernizr.js',
+                    'site/fonts/*',
                     'site/scripts/jquery/dist/jquery.min.js',
                     'site/scripts/jquery/dist/jquery.min.map',
                     'site/scripts/modernizr/modernizr.js',
+                    'spartacus/fonts/*',
                     'spartacus/scripts/jquery/dist/jquery.min.js',
                     'spartacus/scripts/jquery/dist/jquery.min.map',
                     'spartacus/scripts/modernizr/modernizr.js'
