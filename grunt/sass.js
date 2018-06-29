@@ -1,8 +1,11 @@
 // Compile SCSS files to CSS
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
     grunt.config('sass', {
         blog: {
             options: {
+                implementation: sass,
                 outputStyle: 'nested',
                 precision: 5,
                 sourceMap: true
@@ -17,6 +20,7 @@ module.exports = function(grunt) {
         },
         site: {
             options: {
+                implementation: sass,
                 outputStyle: 'nested',
                 precision: 5,
                 sourceMap: true
@@ -31,6 +35,7 @@ module.exports = function(grunt) {
         },
         spartacus: {
             options: {
+                implementation: sass,
                 outputStyle: 'nested',
                 precision: 5,
                 sourceMap: true
