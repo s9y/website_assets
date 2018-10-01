@@ -1,18 +1,21 @@
 // BREADCRUMBS
 // --------------------------------------------------------------------
 .breadcrumb {
-  padding: 8px 0;
-  margin-bottom: 1em;
-  list-style: none;
-}
-.breadcrumb > li {
-  display: inline-block;
-}
-.breadcrumb > li + li:before {
-  content: "»\00a0";
-  padding: 0 5px;
-  color: #999999;
-}
-.breadcrumb > .active {
-  color: #777777;
+    list-style: none;
+    margin-bottom: 1em;
+    padding: 8px 0;
+
+    & > li {
+        display: inline-block;
+
+        & + li:before {
+            color: #999;
+            content: "» ";
+            padding: 0 5px;
+        }
+    }
+
+    & > .active {
+        color: #777;
+    }
 }
