@@ -34,11 +34,10 @@ ul {
 }
 
 blockquote {
-    border-left: .5rem solid $s9y-blue-dark;
+    border-left: 0.5rem solid $s9y-blue-dark;
     margin: 1rem 2rem;
-    padding: .5rem 0 .5rem 2rem;
+    padding: 0.5rem 0 0.5rem 2rem;
 }
-
 
 // GENERIC CLASSES + EXTENDS
 // --------------------------------------------------------------------
@@ -58,8 +57,8 @@ blockquote {
 
     box-sizing: border-box;
     line-height: 1.5;
-    padding: .25rem 1rem;
-    transition: all .25s linear;
+    padding: 0.25rem 1rem;
+    transition: all 0.25s linear;
 
     &,
     &:visited {
@@ -67,10 +66,9 @@ blockquote {
     }
 
     &:hover {
-        transition: all .25s linear;
+        transition: all 0.25s linear;
     }
 }
-
 
 // GLOBAL: CONTENT
 // --------------------------------------------------------------------
@@ -86,8 +84,24 @@ body > main {
     }
 }
 
+figure {
+    img {
+        border: 1px solid $s9y-blue-dark;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+figcaption {
+    box-sizing: border-box;
+    color: $greyed-out;
+    font-size: 0.8125rem;
+    padding: 0.3125rem 0 0;
+    text-align: center;
+}
+
 #content {
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     p {
         text-align: justify;
@@ -102,7 +116,7 @@ body > main {
         border: 1px solid $silver;
         box-sizing: border-box;
         overflow-x: scroll;
-        padding: .5rem;
+        padding: 0.5rem;
     }
 
     @media screen and (min-width: $sm) {
@@ -119,20 +133,4 @@ body > main {
     border: 1px solid $s9y-blue-dark;
     box-sizing: border-box;
     margin: 1rem 0;
-}
-
-figure {
-    img {
-        border: 1px solid $s9y-blue-dark;
-        box-sizing: border-box;
-        margin: 0;
-    }
-}
-
-figcaption {
-    box-sizing: border-box;
-    color: $greyed-out;
-    font-size: .8125rem;
-    padding: .3125rem 0 0;
-    text-align: center;
 }

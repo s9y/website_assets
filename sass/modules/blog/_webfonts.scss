@@ -1,15 +1,21 @@
 // SELF-HOSTED WEBFONTS
 // --------------------------------------------------------------------
-$font-path:     '{TEMPLATE_PATH}fonts/' !default;
+$font-path: '{TEMPLATE_PATH}fonts/' !default;
 
-@mixin webfont($family, $src, $style: normal, $weight: normal, $path: $font-path) {
+@mixin webfont(
+    $family,
+    $src,
+    $style: normal,
+    $weight: normal,
+    $path: $font-path
+) {
     @font-face {
         font-family: $family;
         font-style: $style;
         font-weight: $weight;
-        src: url('#{$path}#{$src}.woff2') format('woff2'),                   // new standards
-            url('#{$path}#{$src}.woff') format('woff'),                     // standards
-            url('#{$path}#{$src}.ttf') format('truetype');                  // Safari, Android, iOS
+        src: url('#{$path}#{$src}.woff2') format('woff2'),
+            url('#{$path}#{$src}.woff') format('woff'),
+            url('#{$path}#{$src}.ttf') format('truetype');
     }
 }
 

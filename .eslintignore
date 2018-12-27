@@ -1,0 +1,11 @@
+dist/**/*.js
+node_modules/**/*.js
+
+blog/scripts/modernizr/*
+blog/scripts/master.*
+site/scripts/jquery/dist/*
+site/scripts/modernizr/*
+site/scripts/master.*
+spartacus/scripts/jquery/dist/*
+spartacus/scripts/modernizr/*
+spartacus/scripts/master.*

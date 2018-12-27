@@ -3,7 +3,8 @@
 #nav-global {
     // LOGO: SERENDIPITY
     &::before {
-        background: url('{TEMPLATE_PATH}img/logos/serendipity.png') 0 0 no-repeat;
+        background: url('{TEMPLATE_PATH}img/logos/serendipity.png') 0 0
+            no-repeat;
         background-size: contain;
     }
 
@@ -16,7 +17,8 @@
     @media screen and (min-width: $sm) {
         .layout-container {
             &::before {
-                background: url('{TEMPLATE_PATH}img/logos/s9y.png') 0 0 no-repeat;
+                background: url('{TEMPLATE_PATH}img/logos/s9y.png') 0 0
+                    no-repeat;
                 background-size: contain;
             }
         }

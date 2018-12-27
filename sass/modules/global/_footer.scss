@@ -3,14 +3,14 @@
 #service {
     background-color: $off-white;
     color: $greyed-out;
-    font-size: .875rem;
+    font-size: 0.875rem;
     padding-bottom: 1rem;
 }
 
 #service-links {
     @extend %plain-list;
 
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     margin-bottom: 0;
     text-align: center;
@@ -30,7 +30,7 @@
 }
 
 #supporters {
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     text-align: center;
 

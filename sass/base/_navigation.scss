@@ -1,8 +1,7 @@
 // NAVIGATION STYLES
 // --------------------------------------------------------------------
 // Defaults
-$nav-breakpoint:    $md !default; // Breakpoint for smallscreen nav
-
+$nav-breakpoint: $md !default; // Breakpoint for smallscreen nav
 
 // General nav styles
 // --------------------------------------------------------------------
@@ -13,7 +12,6 @@ nav ol {
     padding: 0;
 }
 
-
 // RESPONSIVE NAV ICON FALLBACK
 // --------------------------------------------------------------------
 @if not($use-svg-sprites) {
@@ -21,7 +19,6 @@ nav ol {
         @include icon-hamburger;
     }
 }
-
 
 // RESPONSIVE NAV
 // --------------------------------------------------------------------
@@ -59,6 +56,12 @@ nav ol {
     }
 
     @media screen and (min-width: $nav-breakpoint) {
+        .nav-collapse {
+            li {
+                width: auto;
+            }
+        }
+
         .js .nav-collapse {
             clip: auto;
             height: auto;
@@ -67,12 +70,6 @@ nav ol {
             overflow: visible;
             position: relative;
             width: auto;
-        }
-
-        .nav-collapse {
-            li {
-                width: auto;
-            }
         }
 
         .nav-toggle {

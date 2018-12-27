@@ -1,8 +1,7 @@
 // PRINT STYLES
 // --------------------------------------------------------------------
 // Defaults
-$print-color:       #000 !default;
-
+$print-color: #000 !default;
 
 @media print {
     * {
@@ -51,7 +50,7 @@ $print-color:       #000 !default;
     }
 
     @page {
-        margin: .5cm;
+        margin: 0.5cm;
     }
 
     p,

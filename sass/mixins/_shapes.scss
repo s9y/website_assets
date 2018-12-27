@@ -9,7 +9,8 @@
         border-color: darken($box-color, 25%) $container-color;
         border-style: solid;
         border-width: 0 1rem 1rem 0;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .3), -1px 1px 1px rgba(0, 0, 0, .2);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+            -1px 1px 1px rgba(0, 0, 0, 0.2);
         content: '';
         display: block;
         position: absolute;
@@ -20,7 +21,12 @@
 }
 
 // nicolasgallagher.com/pure-css-speech-bubbles/
-@mixin speech-bubble($box-color, $border-color: $box-color, $border-width: 2px, $border-radius: 10px) {
+@mixin speech-bubble(
+    $box-color,
+    $border-color: $box-color,
+    $border-width: 2px,
+    $border-radius: 10px
+) {
     background: $box-color;
     border: $border-width solid $border-color;
     border-radius: $border-radius;
@@ -59,7 +65,12 @@
 // nicolasgallagher.com/an-introduction-to-css-pseudo-element-hacks/
 // --------------------------------------------------------------------
 // Left and right
-@mixin ribbon-both($ribbon-color, $text-color, $container-horizontal-padding, $corner-width: 10px) {
+@mixin ribbon-both(
+    $ribbon-color,
+    $text-color,
+    $container-horizontal-padding,
+    $corner-width: 10px
+) {
     background: $ribbon-color;
     color: $text-color;
     margin-left: -1 * ($container-horizontal-padding + $corner-width);
@@ -85,7 +96,13 @@
 }
 
 // Left only
-@mixin ribbon-left($ribbon-color, $text-color, $container-horizontal-padding, $ribbon-width: 100%, $corner-width: 10px) {
+@mixin ribbon-left(
+    $ribbon-color,
+    $text-color,
+    $container-horizontal-padding,
+    $ribbon-width: 100%,
+    $corner-width: 10px
+) {
     background: $ribbon-color;
     color: $text-color;
     margin-left: -1 * ($container-horizontal-padding + $corner-width);
@@ -106,7 +123,13 @@
 }
 
 // Right only
-@mixin ribbon-right($ribbon-color, $text-color, $container-horizontal-padding, $ribbon-width: 100%, $corner-width: 10px) {
+@mixin ribbon-right(
+    $ribbon-color,
+    $text-color,
+    $container-horizontal-padding,
+    $ribbon-width: 100%,
+    $corner-width: 10px
+) {
     background: $ribbon-color;
     color: $text-color;
     margin-right: -1 * ($container-horizontal-padding + $corner-width);
@@ -127,7 +150,6 @@
     }
 }
 
-
 // TRIANGLES
 // --------------------------------------------------------------------
 @mixin triangle($color, $orientation: bottom, $size: 8px) {
@@ -139,6 +161,7 @@
         } @else {
             border-color: $color transparent;
         }
+
         border-style: solid;
         @if $orientation == left {
             border-width: $size $size $size 0;
@@ -149,6 +172,7 @@
         } @else {
             border-width: $size $size 0;
         }
+
         content: '';
         display: block;
         margin: -($size);
@@ -166,6 +190,7 @@
             bottom: 0;
             left: 50%;
         }
+
         width: 0;
         z-index: 10;
     }

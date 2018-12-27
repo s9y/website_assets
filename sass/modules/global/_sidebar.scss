@@ -1,7 +1,7 @@
 // SIDEBAR
 // --------------------------------------------------------------------
 #sidebar {
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     > h2 {
         @include visuallyhidden;

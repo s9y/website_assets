@@ -4,7 +4,7 @@
     @include clearfix;
 
     h1 {
-        @include grid-box(12, .5rem);
+        @include grid-box(12, 0.5rem);
 
         font-size: 1.75rem;
         text-align: center;
@@ -36,14 +36,14 @@
 
 #claim {
     background-color: $s9y-blue-dark;
-    padding: .25rem 0;
+    padding: 0.25rem 0;
 }
 
 #slogan {
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     color: $off-white;
-    font-size: .875rem;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
@@ -54,6 +54,6 @@
 
         letter-spacing: 4px;
         text-align: left;
-        word-spacing: .25rem;
+        word-spacing: 0.25rem;
     }
 }

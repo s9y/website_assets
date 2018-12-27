@@ -1,5 +1,15 @@
 // FEATURES
 // --------------------------------------------------------------------
+#featurethemes {
+    @include clearfix;
+
+    img {
+        float: left;
+        margin-right: 1%;
+        width: 48%;
+    }
+}
+
 #features {
     @extend %plain-list;
 
@@ -16,12 +26,12 @@
         box-sizing: border-box;
         margin: 0 1rem 0 0;
         opacity: 1;
-        transition: opacity .25s linear;
+        transition: opacity 0.25s linear;
         width: 100%;
 
         &:hover {
-            opacity: .5;
-            transition: opacity .25s linear;
+            opacity: 0.5;
+            transition: opacity 0.25s linear;
         }
     }
 
@@ -46,15 +56,5 @@
                 padding-right: 0;
             }
         }
-    }
-}
-
-#featurethemes {
-    @include clearfix;
-
-    img {
-        float: left;
-        margin-right: 1%;
-        width: 48%;
     }
 }

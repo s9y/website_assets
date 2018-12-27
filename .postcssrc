@@ -1,0 +1,17 @@
+{
+    "map": {
+        "inline": false,
+        "annotation": true,
+        "sourcesContent": true
+    },
+    "plugins": {
+        "autoprefixer": {
+            "grid": true
+        },
+        "pixrem": {
+            atrules: true,
+            unitPrecision: 0
+        },
+        "postcss-flexbugs-fixes": {}
+    }
+}

@@ -1,7 +1,7 @@
 // HOME: SHOWCASE
 // --------------------------------------------------------------------
 #preface {
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     h2 {
         @include visuallyhidden;
@@ -23,14 +23,14 @@
 }
 
 #download {
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     h2 {
         @include visuallyhidden;
     }
 
     > p {
-        font-size: .875rem;
+        font-size: 0.875rem;
 
         @media screen and (min-width: $md) {
             max-width: 12.5rem;
@@ -48,13 +48,13 @@
     box-sizing: border-box;
     line-height: 1.5;
     margin: 0;
-    padding: .5rem .625rem;
-    transition: all .25s linear;
+    padding: 0.5rem 0.625rem;
+    transition: all 0.25s linear;
     width: 100%;
 
     &:hover {
         color: $white;
-        transition: all .25s linear;
+        transition: all 0.25s linear;
     }
 
     @media screen and (min-width: $sm) {
@@ -64,7 +64,7 @@
     @media screen and (min-width: $md) {
         margin: 1rem 0 0;
         max-width: 12.5rem;
-        padding: .625rem 1rem;
+        padding: 0.625rem 1rem;
         width: 100%;
     }
 
@@ -74,7 +74,7 @@
 }
 
 #screenshots {
-    @include grid-box(12, .5rem);
+    @include grid-box(12, 0.5rem);
 
     > h2 {
         @include visuallyhidden;
@@ -110,11 +110,11 @@
         border: 1px solid $s9y-blue-dark;
         box-sizing: border-box;
         opacity: 1;
-        transition: opacity .25s linear;
+        transition: opacity 0.25s linear;
 
         &:hover {
-            opacity: .5;
-            transition: opacity .25s linear;
+            opacity: 0.5;
+            transition: opacity 0.25s linear;
         }
     }
 

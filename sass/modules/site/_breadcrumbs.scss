@@ -8,9 +8,9 @@
     & > li {
         display: inline-block;
 
-        & + li:before {
+        & + li::before {
             color: #999;
-            content: "» ";
+            content: '» ';
             padding: 0 5px;
         }
     }

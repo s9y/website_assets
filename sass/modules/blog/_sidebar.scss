@@ -19,7 +19,7 @@
     background: $s9y-blue-lite;
     border-radius: 8px;
     box-sizing: border-box;
-    padding: .5rem;
+    padding: 0.5rem;
 
     dt {
         font-weight: normal;
@@ -31,6 +31,6 @@
 }
 
 // SYNDICATION (TMP)
-#serendipity_syndication_list li:nth-child(1n+2) {
+#serendipity_syndication_list li:nth-child(1n + 2) {
     display: none;
 }

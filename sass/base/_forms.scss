@@ -2,33 +2,22 @@
 // formalize.me
 // --------------------------------------------------------------------
 // Defaults
-$input-bg:              $off-white !default;
-$input-fg:              $off-black !default;
-$input-focus:           #06f !default;
-$input-placeholder:     $greyed-out !default;
+$input-bg: $off-white !default;
+$input-fg: $off-black !default;
+$input-focus: #06f !default;
+$input-placeholder: $greyed-out !default;
 
-$input-border-radius:   0 !default;
-$input-border-type:     1px solid !default;
-$input-border-color:    #c1c1c1 #c1c1c1 #e1e1e1 !default;
+$input-border-radius: 0 !default;
+$input-border-type: 1px solid !default;
+$input-border-color: #c1c1c1 #c1c1c1 #e1e1e1 !default;
 
-$standard-buttons:      true !default;
-
+$standard-buttons: true !default;
 
 @if $use-form-styles {
     fieldset {
         border: 0;
         margin: 0;
         padding: 0;
-    }
-
-    form button,
-    select,
-    textarea,
-    input {
-        &:focus {
-            box-shadow: 0 0 5px 0 $input-focus;
-            z-index: 1; // Opera
-        }
     }
 
     input[type='file'],
@@ -67,7 +56,6 @@ $standard-buttons:      true !default;
             font-style: normal;
         }
     }
-
 
     // STYLE FORM ELEMENTS (borrowed heavily from formalize.me)
     // --------------------------------------------------------------------
@@ -142,7 +130,6 @@ $standard-buttons:      true !default;
         width: 100%;
     }
 
-
     // Form buttons
     // --------------------------------------------------------------------
     @if $standard-buttons {
@@ -153,7 +140,6 @@ $standard-buttons:      true !default;
             @include gradient-button();
         }
     }
-
 
     // Disabled form elements
     // --------------------------------------------------------------------
@@ -168,6 +154,16 @@ $standard-buttons:      true !default;
             color: $greyed-out;
             cursor: default;
             user-select: none;
+        }
+    }
+
+    form button,
+    select,
+    textarea,
+    input {
+        &:focus {
+            box-shadow: 0 0 5px 0 $input-focus;
+            z-index: 1; // Opera
         }
     }
 }
