@@ -52,7 +52,7 @@
         "js:spartacus": "npm-run-all --sequential js:spartacus:concat js:spartacus:minify",
         "js:spartacus:concat": "uglifyjs --comments \"/^!/\" --source-map \"url=master.js.map\" --output spartacus/scripts/master.js -- node_modules/responsive-nav/responsive-nav.js spartacus/scripts/main.js",
         "js:spartacus:minify": "mkdirp dist/spartacus/scripts/ && uglifyjs --compress --mangle --comments \"/^!/\" --source-map \"content=spartacus/scripts/master.js.map,includeSources,url=master.js.map\" --output dist/spartacus/scripts/master.js -- spartacus/scripts/master.js",
-        "postinstall": "npm run setup",
+        "postinstall": "npm run setup:all",
         "setup:all": "npm-run-all --parallel setup:site setup:spartacus",
         "setup:site": "copyfiles -u 1 node_modules/jquery/dist/jquery.min.* site/scripts/",
         "setup:spartacus": "copyfiles -u 1 node_modules/jquery/dist/jquery.min.* spartacus/scripts/",
@@ -63,7 +63,7 @@
         "test": "npm-run-all --parallel eslint:all stylelint:all"
     },
     "dependencies": {
-        "jquery": "^3.3.1",
+        "jquery": "^3.4.0",
         "magnific-popup": "^1.1.0",
         "node-normalize-scss": "^8.0.0",
         "responsive-nav": "^1.0.39"
@@ -73,18 +73,18 @@
         "clean-css-cli": "^4.2.1",
         "copyfiles": "^2.1.0",
         "del-cli": "^1.1.0",
-        "eslint": "^5.11.1",
+        "eslint": "^5.16.0",
         "mkdirp": "^0.5.1",
         "node-sass": "^4.11.0",
         "npm-run-all": "^4.1.5",
         "pixrem": "^4.0.1",
-        "postcss-cli": "^6.1.0",
+        "postcss-cli": "^6.1.2",
         "postcss-flexbugs-fixes": "^4.1.0",
-        "stylelint": "^9.9.0",
-        "stylelint-config-prettier": "^4.0.0",
-        "stylelint-config-recommended-scss": "^3.2.0",
-        "stylelint-config-standard": "^18.2.0",
-        "stylelint-scss": "^3.4.4",
-        "uglify-js": "^3.4.9"
+        "stylelint": "^10.0.1",
+        "stylelint-config-prettier": "^5.1.0",
+        "stylelint-config-recommended-scss": "^3.3.0",
+        "stylelint-config-standard": "^18.3.0",
+        "stylelint-scss": "^3.6.0",
+        "uglify-js": "^3.5.9"
     }
 }
