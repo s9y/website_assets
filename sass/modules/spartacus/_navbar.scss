@@ -2,15 +2,19 @@
 // --------------------------------------------------------------------
 #nav-global {
     // LOGO: SERENDIPITY
-    &::before {
-        background: url('../img/logos/serendipity.png') 0 0 no-repeat;
-        background-size: contain;
+    @media screen and (max-width: 29.9375em) {
+        &::before {
+            background: url('../img/logos/serendipity.png') 0 0 no-repeat;
+            background-size: contain;
+        }
     }
 
     // LOGO: FLOWER
-    &::after {
-        background: url('../img/logos/flower.png') 0 0 no-repeat;
-        background-size: contain;
+    @media screen and (max-width: 29.9375em) {
+        &::after {
+            background: url('../img/logos/flower.png') 0 0 no-repeat;
+            background-size: contain;
+        }
     }
 
     @media screen and (min-width: $sm) {
