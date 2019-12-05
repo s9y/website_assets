@@ -31,10 +31,9 @@
     img {
         border: 1px solid $s9y-blue-dark;
         box-sizing: border-box;
+        margin-bottom: 0.5rem;
         opacity: 1;
         transition: opacity 0.25s linear;
-
-        margin-bottom: 0.5rem;
 
         &:hover {
             opacity: 0.5;
