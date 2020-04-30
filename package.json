@@ -60,7 +60,7 @@
         "test": "npm-run-all --parallel eslint:all stylelint:all"
     },
     "dependencies": {
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "magnific-popup": "^1.1.0",
         "node-normalize-scss": "^8.0.1",
         "responsive-nav": "^1.0.39"
